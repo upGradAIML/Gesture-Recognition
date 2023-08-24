@@ -33,3 +33,13 @@ Open the terminal
 g0 down https://drive.google.com/uc?id=1ehyrYBQ5rbQQe6yL4XbLWe3FMvuVUGiL
 unzip Project_data.zip
 ```
+## Observations
+
+Experiment | Model Config | Categorical Accuracy | Validation Accuracy
+-----:|:-------------------------: | :---------------: | :---------------
+1 | Conv3D (3 layers) | 96.68% | 57.00%
+2 | Conv2D + TimeDistributed + GRU | 81.60% | 31.00%
+3 | Conv2D + TimeDistributed + GlobalAveragePooling2D | 75.72% | 39.00%
+4 | Conv3D + LSTM | 96.53% | 54.00%
+5 | Conv3D (4 layers) | 97.59% | 53.00%
+6 | Transfer Learning (MobileNet) + TimeDistributed + LSTM + GRU |  99.91% | 98.53%
