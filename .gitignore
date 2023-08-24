@@ -22,4 +22,4 @@ rad.json
 TestResults.xml
 Project_data
 *.zip
-model*
+model*/
